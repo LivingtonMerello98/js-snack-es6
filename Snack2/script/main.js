@@ -12,5 +12,19 @@ const soccerTeams = [
     { nome: 'Barcellona', puntiFatti: 0, falliSubiti: 0 }
   ];
   
-  console.log(soccerTeams);
-  
+
+  //randNum
+  let randNum = Math.floor(Math.random() * 100);
+
+soccerTeams.forEach(team => {
+    team.puntiFatti = randNum; 
+    team.falliSubiti = randNum; 
+});
+
+// creo nuovo array con nome e falli subiti
+const teamFouls = soccerTeams.map(team => {
+    return { nome: team.nome, falliSubiti: team.falliSubiti };
+});
+
+// Stampare l'array con nomi e falli subiti
+console.log(teamFouls);

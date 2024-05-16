@@ -5,6 +5,7 @@ console.log('snack 1')
 //Creare un array di oggetti: Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 
 // Stampare a schermo la bici con peso minore utilizzando  template literal
+
 const bikes = [
     { nome: 'Mountain-Bike', peso: 8.5 },
     { nome: 'Bici da Corsa', peso: 7.2 },
@@ -18,7 +19,7 @@ const bikes = [
     { nome: 'Bianchi Oltre XR4', peso: 12.0 }
   ];
 
-  //var per il limite peso
+//var per il limite peso
 
 
   let lightestBike = bikes[0]; // Inizializziamo con la prima bici dell'array
@@ -28,5 +29,5 @@ const bikes = [
           lightestBike = bike; // Se troviamo una bici più leggera, la assegniamo a lightestBike
       }
   });
-  
+
   console.log(`La bici più leggera è la ${lightestBike.nome} con un peso di ${lightestBike.peso} kg.`);
