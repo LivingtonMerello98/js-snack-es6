@@ -33,4 +33,3 @@ let minWeight =  []//creiamo un array vuoto
 
 
 
-
